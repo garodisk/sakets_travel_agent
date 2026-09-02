@@ -1,5 +1,7 @@
 # TripMate AI
 
+WORK IN PROGRESS
+
 Personal multi-agent travel planner. You describe a trip in natural language; the graph fetches live flights, searches hotels, drafts an itinerary, then returns a formatted plan.
 
 ## How it works
