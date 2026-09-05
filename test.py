@@ -1,14 +1,8 @@
 import asyncio
-import json
-import rich
-from mcp_client_test import tavily_mcp_search
+# from mcp_client_test import get_all_tools, tavily_mcp_search
+from mcp_client import get_all_tools
+
+
 
 if __name__ == "__main__":
-    query = "Latest AI news"
-
-    result = asyncio.run(tavily_mcp_search(query))
-
-    text = result[0]["text"]
-    data = json.loads(text)
-
-    rich.print_json(data=data)
+    asyncio.run(get_all_tools())

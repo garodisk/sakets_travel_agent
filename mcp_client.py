@@ -35,31 +35,39 @@ client = MultiServerMCPClient(
             "transport": "stdio",
             "command": "uvx",
             "args": [
+                "--python",
+                "3.13",
+                "--with",
+                "mcp<2",
                 "aviationstack-mcp"
             ],
             "env": {
+                **os.environ,
                 "AVIATION_STACK_API_KEY": AVIATION_STACK_API_KEY
             }
         },
 
         "weather": {
             "transport": "stdio",
-            "command": r"C:\Users\saket garodia\projects\Saket's Tripmate MCP\.venv\Scripts\python.exe",
+            "command": r"C:\Users\saket\projects\Saket's Tripmate MCP\.venv\Scripts\python.exe",
             "args": [
-                r"C:\Users\saket garodia\projects\Saket's Tripmate MCP\custom_weather_mcp_server.py"
+                r"C:\Users\saket\projects\Saket's Tripmate MCP\custom_weather_mcp_server.py"
             ],
             "env": {
+                **os.environ,
                 "OPENWEATHER_API_KEY": OPENWEATHER_API_KEY
             }
         }
-
-        
-
-        
-
     }
-
 )
+
+        
+
+        
+
+#     }
+
+# )
 
 
 
