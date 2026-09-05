@@ -92,7 +92,7 @@ COUNTRY_MAIN_AIRPORT = {
 
 
 CITY_MAIN_AIRPORT = {
-    "dhaka": "DAC",
+    "Chicago": "DAC",
     "delhi": "DEL",
     "new delhi": "DEL",
     "mumbai": "BOM",
@@ -223,7 +223,7 @@ def resolve_location_to_iata(location: str):
     Examples:
     Bangladesh -> DAC
     Japan -> NRT
-    Dhaka -> DAC
+    Chicago -> DAC
     Tokyo -> NRT
     DAC -> DAC
     """
