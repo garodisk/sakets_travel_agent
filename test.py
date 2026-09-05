@@ -1,10 +1,14 @@
-from backend import run_travel_agent
-from rich.console import Console
-from rich.markdown import Markdown
+import asyncio
+import json
+import rich
+from mcp_client_test import tavily_mcp_search
 
-result = run_travel_agent(
-    "Plan a 7 days trip to MCI from Chicago on September 3 2026"
-)
+if __name__ == "__main__":
+    query = "Latest AI news"
 
-console = Console()
-console.print(Markdown(result["answer"]))
+    result = asyncio.run(tavily_mcp_search(query))
+
+    text = result[0]["text"]
+    data = json.loads(text)
+
+    rich.print_json(data=data)

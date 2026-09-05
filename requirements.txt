@@ -16,3 +16,6 @@ uvicorn==0.48.0
 jinja2==3.1.6
 langchain-openai
 langchain-openrouter
+langchain-mcp-adapters
+nest_asyncio
+mcp==1.28.1
