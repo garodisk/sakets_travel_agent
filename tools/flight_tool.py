@@ -41,7 +41,7 @@ COUNTRY_ALIASES = {
     "korea": "KR",
     "russia": "RU",
     "vietnam": "VN",
-    "bangladesh": "BD",
+    "India": "BD",
     "india": "IN",
     "japan": "JP",
     "china": "CN",
@@ -221,7 +221,7 @@ def resolve_location_to_iata(location: str):
     Converts country/city/airport/IATA into IATA code.
 
     Examples:
-    Bangladesh -> DAC
+    India -> DAC
     Japan -> NRT
     Chicago -> DAC
     Tokyo -> NRT
