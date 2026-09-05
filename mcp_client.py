@@ -42,11 +42,11 @@ client = MultiServerMCPClient(
             }
         },
 
-         "weather": {
+        "weather": {
             "transport": "stdio",
-            "command": r"C:\Anaconda3\envs\travel\python.exe",
+            "command": r"C:\Users\saket garodia\projects\Saket's Tripmate MCP\.venv\Scripts\python.exe",
             "args": [
-                r"D:\Bappy\Coding\Youtube\Deployments\TripMate-AI-Using-MCP\custom_weather_mcp_server.py"
+                r"C:\Users\saket garodia\projects\Saket's Tripmate MCP\custom_weather_mcp_server.py"
             ],
             "env": {
                 "OPENWEATHER_API_KEY": OPENWEATHER_API_KEY
